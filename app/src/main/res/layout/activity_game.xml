@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="lii2.colorgame.GameActivity"
+    android:id="@+id/background">
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/redButton"
+        android:text="@string/red_button_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:onClick="pressRedButton"
+        android:background="@drawable/roundbutton"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/blueButton"
+        android:text="@string/blue_button_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:onClick="pressBlueButton"
+        android:background="@drawable/roundbutton"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/centerSpace"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/greenButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="130dp"
+        android:text="@string/green_button_text"
+        android:layout_marginBottom="10dp"
+        android:onClick="pressGreenButton"
+        android:background="@drawable/roundbutton"/>
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/yellowButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="130dp"
+        android:text="@string/yellow_button_text"
+        android:layout_marginBottom="10dp"
+        android:onClick="pressYellowButton"
+        android:background="@drawable/roundbutton"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/whiteButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/white_button_text"
+        android:layout_marginBottom="10dp"
+        android:onClick="pressWhiteButton" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: 0"
+        android:id="@+id/timerBox"
+        android:layout_alignTop="@+id/centerSpace"
+        android:layout_centerHorizontal="true"
+        android:textSize="8pt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:id="@+id/scoreBox"
+        android:layout_above="@+id/centerSpace"
+        android:layout_centerHorizontal="true"
+        android:textSize="10pt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default"
+        android:id="@+id/highScoreBox"
+        android:layout_above="@+id/scoreBox"
+        android:layout_centerHorizontal="true"
+        android:textSize="8pt"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/endButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/end_button_text"
+        android:onClick="pressWhiteButton"
+        android:background="@android:color/darker_gray"/>
+
+</RelativeLayout>

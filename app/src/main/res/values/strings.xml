@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ColorGame2</string>
+    <string name="red_button_text">RED</string>
+    <string name="blue_button_text">BLUE</string>
+    <string name="yellow_button_text">YELLOW</string>
+    <string name="green_button_text">GREEN</string>
+    <string name="white_button_text">WHITE</string>
+    <string name="end_button_text">End</string>
+</resources>
